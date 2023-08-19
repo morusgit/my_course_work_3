@@ -11,7 +11,6 @@ def sorting_from_empty(list_from_file):
     """ функция выборки выполненых операций"""
     list_from_file_new = []
     for i in list_from_file:
-
         if i.get('state') == 'EXECUTED':
             list_from_file_new.append(i)
     return list_from_file_new

@@ -1,5 +1,5 @@
 import json
-import datetime
+from datetime import datetime
 
 def load_file(data):
     """ функция получает данные из файла json"""

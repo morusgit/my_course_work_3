@@ -21,7 +21,7 @@ def sorting_from_data(list_from_file):
     return list_from_file
 
 
-def datatime(text):
+def data_time(text):
     """функция преобразования даты"""
     datetime_object = datetime.strptime(text, '%Y-%m-%dT%H:%M:%S.%f')
     return f"{datetime_object.day}.{datetime_object.month}.{datetime_object.year}"
@@ -58,4 +58,4 @@ def print_from_to(sorting_dict):
 
 def print_date_description(sorting_dict):
     """функция печати  даты и описания операции"""
-    return f'{datatime(sorting_dict["date"])} {sorting_dict["description"]}'
+    return f'{data_time(sorting_dict["date"])} {sorting_dict["description"]}'
